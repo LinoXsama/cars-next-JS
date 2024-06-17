@@ -18,7 +18,8 @@ const SearchManufacturer = ({manufacturer, setManufacturer }: SearchManufacturer
     ? manufacturers
     : manufacturers.filter((item) => (
       item.toLocaleLowerCase().replace(/\s+/g, "").includes(query.toLocaleLowerCase().replace(/\s+/g, ""))
-    ));
+    )
+  );
 
   return (
     <div className="search-manufacturer">
