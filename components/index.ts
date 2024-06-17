@@ -3,7 +3,7 @@ import CustomButton from "./CustomButton";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
 import SearchBar from "./SearchBar";
-// import SearchManufacturer from "./SearchManufacturer";
+import SearchManufacturer from "./SearchManufacturer";
 
 export { 
   Hero,
@@ -11,5 +11,5 @@ export {
   Navbar,
   Footer,
   SearchBar,
-  // SearchManufacturer
+  SearchManufacturer
 };
