@@ -2,7 +2,7 @@
 
 import { CarProps } from "@/types";
 
-import { calculateCarRent, generateCarImageUrl } from "@/utils";
+import { calculateCarRent, generateCarImageUrl, processCarType } from "@/utils";
 
 import Image from "next/image";
 
@@ -21,6 +21,8 @@ const CarCard = ({ car }: CarCardProps) => {
   const carRent = calculateCarRent(city_mpg, year);
 
   const [isOpen, setIsOpen] = useState(false);
+
+  console.log(typeof drive)
 
   return (
     <div className="car-card group">
@@ -71,7 +73,7 @@ const CarCard = ({ car }: CarCardProps) => {
             />
 
             <p className='text-[14px]'>
-              {drive.toUpperCase()}
+              {processCarType(drive)}
             </p>
           </div>
 
